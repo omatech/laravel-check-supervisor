@@ -1,0 +1,26 @@
+{
+  "name": "adriaroca/laravel-check-supervisor",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Adrià Roca",
+      "email": "aroca@omatech.com"
+    }
+  ],
+  "require": {
+    "laravel/framework" : "5.5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Omatech\\CheckSupervisor\\": "src",
+      "Omatech\\CheckSupervisor\\App\\": "src/app"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Omatech\\CheckSupervisor\\CheckSupervisorServiceProvider"
+      ]
+    }
+  }
+}
