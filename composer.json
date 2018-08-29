@@ -22,5 +22,7 @@
         "Omatech\\CheckSupervisor\\CheckSupervisorServiceProvider"
       ]
     }
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
