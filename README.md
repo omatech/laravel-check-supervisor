@@ -1,5 +1,5 @@
 # Laravel: Check Supervisor Status 
-Command to check that Supervisor is running.
+Command to check that Supervisor is running and automatically restart it.
 
 ## Installation
 
@@ -38,7 +38,7 @@ Omatech\CheckSupervisor\App\Providers\PublishServiceProvider
 1.- Use the command to know if supervisor is down. You can automate it in your crontab.
 
 ``` 
-php artisan supervisor:check en el sistema
+php artisan supervisor:check
 ```
 
 2.- Create a listener to capture the package events. Here you can create your custom notification. Example:
@@ -100,6 +100,16 @@ You can capture feedback from the package using a param in ```__construct```.
         ...
     ];
 ```
+
+4.- If you want to activate the automatic restart option, 
+set the variable ```restart-supervisor``` in the configuration file ```check-supervisor.php``` to true.
+
+```php
+    return [
+        'restart-supervisor' => true
+    ];
+```
+
 
 ## Credits
 
