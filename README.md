@@ -6,7 +6,7 @@ Command to check that Supervisor is running and automatically restart it.
 1.- Require the package in your composer.json.
 
 ```
-composer require adriaroca/laravel-check-supervisor
+composer require omatech/laravel-check-supervisor
 ```
 
 2.- Register the service provider.
